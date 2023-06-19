@@ -5,14 +5,14 @@
   <title>Recipes</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="text-gray-600">
+<body class="text-gray-600 font-body">
 
-   <div><!--content wrapper -->
-    <div>
+   <div class="grid md:grid-cols-3"><!--content wrapper -->
+    <div class="md:col-span-1">
       <nav>
         <div>
           <h1 class="font-bold uppercase p-4 border-b border-gray-100">
-            <a href="">Recipes</a>
+            <a href="/" class="">ReSai-P</a>
           </h1>
         </div>
         <ul>
@@ -34,10 +34,10 @@
         </ul>
       </nav>
     </div><!-- end nav -->
-    <main class="px-16 py-6">
-      <div>
-        <a href="#" class="text-primary">Log in</a>
-        <a href="#" class="text-primary">Sign up</a>
+    <main class="px-16 py-6 bg-gray-100 md:col-span-2">
+      <div class="flex justify-center md:justify-end">
+        <a href="#" class=" btn text-primary border-primary md:border-2">Log in</a>
+        <a href="#" class=" btn text-primary ml-2 border-primary md:border-2">Sign up</a>
       </div>
 
       <header>
@@ -47,15 +47,41 @@
 
       <div>
         <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
-        <div class="mt-8">
+        <div class="mt-8 grid lg:grid-cols-3 gap-10">
             <!-- Cards -->
-          <div>
-            <img src="img/sarma.png" alt="">
-            <div>
-              <span>Sarma</span>
-              <span>Stuffed peppers</span>
+          <div class="card">
+            <img src="img/sarma.jpg" alt="sarma" class="w-full h-40 sm:60 object-cover">
+            <div class="m-4">
+              <span class="font-bold">Sarma</span>
+              <span class="block text-gray-500 text-sm">By Jethro</span>
+            </div>
+            <div class="badge">
+              <span>120 mins</span>
             </div>
           </div>
+
+          <div class="card">
+            <img src="img/stuffed_peppers.jpg" alt="stuffed peppers" class="w-full h-40 sm:60 object-cover">
+            <div class="m-4">
+              <span class="font-bold">Stuffed peppers</span>
+              <span class="block text-gray-500 text-sm">By Jethro</span>
+            </div>
+            <div class="badge">
+              <span>60 mins</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="img/ajvar.jpg" alt="ajvar" class="w-full h-40 sm:60 object-cover">
+            <div class="m-4">
+              <span class="font-bold">Ajvar</span>
+              <span class="block text-gray-500 text-sm">By Jethro</span>
+            </div>
+            <div class="badge">
+              <span>120 mins</span>
+            </div>
+          </div>
+
         </div>
 
         <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most Popular</h4>
@@ -63,8 +89,8 @@
           <!-- Cards -->
         </div>
 
-        <div>
-          <div class="bg-secondary-100 text-secondary-200">
+        <div class="flex justify-center">
+          <div class=" btn bg-secondary-100 text-secondary-200">
             Load more
           </div>
         </div>
